@@ -3,88 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <title>Caixeta & Moreira Advocacia</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
+    :root {
+      --primary: #0b1f33;
+      --secondary: #1e3a5f;
+      --bg: #f4f6f9;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background-color: #f2f4f7;
-      color: #1a1a1a;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
     }
 
     header {
-      background-color: #0f1f2f;
-      color: #ffffff;
-      padding: 60px 20px;
-      text-align: center;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      padding: 90px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
 
     header h1 {
+      font-size: 46px;
       margin: 0;
-      font-size: 36px;
-      letter-spacing: 1px;
+      font-weight: 600;
+      letter-spacing: -1px;
     }
 
     header p {
-      margin-top: 12px;
-      font-size: 16px;
+      margin-top: 20px;
+      max-width: 520px;
+      font-size: 18px;
       opacity: 0.9;
     }
 
     section {
-      max-width: 1100px;
-      margin: 60px auto;
-      padding: 0 20px;
+      padding: 80px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
     }
 
     .card {
-      background: #ffffff;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-      margin-bottom: 40px;
+      background: #fff;
+      padding: 45px;
+      border-radius: 12px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
     }
 
     h2 {
-      color: #0f1f2f;
+      font-size: 28px;
       margin-top: 0;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      color: var(--primary);
     }
 
     ul {
-      padding-left: 20px;
+      padding-left: 18px;
     }
 
     ul li {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .cta {
-      text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
     }
 
     .cta a {
-      background-color: #0f1f2f;
-      color: #ffffff;
-      padding: 16px 34px;
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      padding: 16px 36px;
+      border-radius: 30px;
       text-decoration: none;
-      border-radius: 4px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
+      font-weight: 500;
+      transition: all 0.3s ease;
     }
 
     .cta a:hover {
-      background-color: #091521;
+      background: var(--secondary);
+      transform: translateY(-2px);
     }
 
     footer {
-      background-color: #0f1f2f;
-      color: #ffffff;
+      background: #0b1f33;
+      color: #cbd5e1;
+      padding: 40px 20px;
       text-align: center;
-      padding: 25px;
       font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 34px;
+      }
     }
   </style>
 </head>
@@ -92,38 +127,48 @@
 <body>
 
 <header>
-  <h1>Caixeta & Moreira</h1>
-  <p>Advocacia estratégica e atuação personalizada</p>
+  <div class="container">
+    <h1>Caixeta & Moreira</h1>
+    <p>
+      Advocacia estratégica, técnica e moderna, com foco em soluções jurídicas
+      sólidas e atendimento personalizado.
+    </p>
+  </div>
 </header>
 
 <section>
-  <div class="card">
-    <h2>Sobre o Escritório</h2>
-    <p>
-      Atuamos com foco técnico, ética profissional e soluções jurídicas
-      eficientes, sempre buscando a melhor estratégia para cada caso.
-    </p>
-  </div>
+  <div class="container grid">
+    <div class="card">
+      <h2>O Escritório</h2>
+      <p>
+        Atuamos de forma preventiva e contenciosa, oferecendo assessoria jurídica
+        consistente, alinhada às necessidades do cliente e às melhores práticas
+        do mercado.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>Áreas de Atuação</h2>
-    <ul>
-      <li>Direito Civil</li>
-      <li>Direito do Consumidor</li>
-      <li>Direito Trabalhista</li>
-      <li>Direito Empresarial</li>
-      <li>Consultoria Jurídica</li>
-    </ul>
-  </div>
+    <div class="card">
+      <h2>Áreas de Atuação</h2>
+      <ul>
+        <li>Direito Civil e Contratos</li>
+        <li>Direito do Consumidor</li>
+        <li>Direito Empresarial</li>
+        <li>Direito Trabalhista</li>
+        <li>Consultoria Jurídica</li>
+      </ul>
+    </div>
 
-  <div class="card">
-    <h2>Contato</h2>
-    <p>Entre em contato para análise do seu caso.</p>
+    <div class="card">
+      <h2>Contato</h2>
+      <p>
+        Entre em contato para uma análise estratégica do seu caso.
+      </p>
 
-    <div class="cta">
-      <a href="https://wa.me/5599999999999" target="_blank">
-        Atendimento via WhatsApp
-      </a>
+      <div class="cta">
+        <a href="https://wa.me/5599999999999" target="_blank">
+          Atendimento via WhatsApp
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -134,3 +179,4 @@
 
 </body>
 </html>
+
