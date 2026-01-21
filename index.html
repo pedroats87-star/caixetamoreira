@@ -1,131 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Caixeta Moreira Advocacia</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f5f5f5;
-      color: #222;
-    }
-
-    header {
-      background-color: #1f2a44;
-      color: #fff;
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-
-    header p {
-      margin-top: 10px;
-      font-size: 16px;
-      opacity: 0.9;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .box {
-      background: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.08);
-      margin-bottom: 30px;
-    }
-
-    h2 {
-      color: #1f2a44;
-      margin-top: 0;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .cta {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .cta a {
-      background-color: #1f2a44;
-      color: #fff;
-      padding: 15px 30px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    .cta a:hover {
-      background-color: #111a2f;
-    }
-
-    footer {
-      background-color: #1f2a44;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome do Escritório | Advocacia Especializada</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte sugerida: Montserrat ou Lato -->
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <h1>Caixeta Moreira Advocacia</h1>
-  <p>Atuação estratégica, técnica e personalizada</p>
-</header>
+    <!-- Header/Nav -->
+    <header>
+        <div class="container">
+            <div class="logo">LOGOTIPO</div>
+            <nav>
+                <a href="#sobre">Sobre</a>
+                <a href="#atuacao">Atuação</a>
+                <a href="#contato" class="btn-cta-nav">Contato</a>
+            </nav>
+        </div>
+    </header>
 
-<section>
-  <div class="box">
-    <h2>Sobre o Escritório</h2>
-    <p>
-      O escritório Caixeta Moreira Advocacia atua de forma especializada,
-      oferecendo soluções jurídicas seguras, eficientes e alinhadas às
-      necessidades de cada cliente.
-    </p>
-  </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Defesa Especializada para o seu Direito</h1>
+            <p>Atuação ética e estratégica no Direito Civil, Trabalhista e Família.</p>
+            <a href="#contato" class="btn-main">Agendar Consulta</a>
+        </div>
+    </section>
 
-  <div class="box">
-    <h2>Áreas de Atuação</h2>
-    <ul>
-      <li>Direito Civil</li>
-      <li>Direito do Consumidor</li>
-      <li>Direito Trabalhista</li>
-      <li>Direito Empresarial</li>
-      <li>Consultoria Jurídica</li>
-    </ul>
-  </div>
+    <!-- Sobre -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2>Sobre o Escritório</h2>
+            <p>Com anos de experiência, nosso escritório foca na solução rápida e eficiente de conflitos, prezando pela transparência e ética jurídica.</p>
+        </div>
+    </section>
 
-  <div class="box">
-    <h2>Atendimento</h2>
-    <p>
-      Atendimento personalizado, com foco em resultados e transparência.
-      Entre em contato para uma análise do seu caso.
-    </p>
+    <!-- Áreas de Atuação -->
+    <section id="atuacao" class="practice">
+        <div class="container">
+            <h2>Áreas de Atuação</h2>
+            <div class="grid">
+                <div class="card"><h3>Direito Civil</h3></div>
+                <div class="card"><h3>Direito de Família</h3></div>
+                <div class="card"><h3>Direito Trabalhista</h3></div>
+            </div>
+        </div>
+    </section>
 
-    <div class="cta">
-      <a href="https://wa.me/5599999999999" target="_blank">
-        Falar pelo WhatsApp
-      </a>
-    </div>
-  </div>
-</section>
+    <!-- Contato/CTA -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <p>Envie uma mensagem e receba uma avaliação preliminar.</p>
+            <a href="https://wa.me" target="_blank" class="btn-whatsapp">WhatsApp (11) 99999-9999</a>
+        </div>
+    </section>
 
-<footer>
-  © 2026 Caixeta Moreira Advocacia — Todos os direitos reservados
-</footer>
+    <footer>
+        <p>&copy; 2025 - Nome do Escritório de Advocacia - OAB/XX 00.000</p>
+    </footer>
 
 </body>
 </html>
+
